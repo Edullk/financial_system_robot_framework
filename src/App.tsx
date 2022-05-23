@@ -47,7 +47,7 @@ const App = () => {
 
   return (
     <C.Container>
-      <C.Header>
+      <C.Header> 
         <C.HeaderText>Sistema Financeiro </C.HeaderText>
       </C.Header>
       <C.Body>
