@@ -8,7 +8,7 @@ type Props = {
 
 export const TableArea = ({ list }: Props) => {
     return (
-        <C.Table>
+        <C.Table id="table_area">
             <thead>
                 <tr>
                     <C.TableHeadColumn width={100}>Data</C.TableHeadColumn>

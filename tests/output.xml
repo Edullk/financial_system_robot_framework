@@ -1,47 +1,160 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220523 10:49:40.711" rpa="false" schemaversion="3">
-<suite id="s1" name="Test" source="C:\Projetos\expense-tracker-react\tests\test.robot">
-<test id="s1-t1" name="Example Test" line="5">
-<kw name="New Browser" library="Browser">
-<arg>Chromium</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Create a new playwright Browser with specified options.</doc>
-<status status="FAIL" starttime="20220523 10:56:32.273" endtime="20220523 10:56:32.274"/>
-</kw>
+<robot generator="Robot 5.0.1 (Python 3.10.4 on linux)" generated="20220524 15:00:53.342" rpa="false" schemaversion="3">
+<suite id="s1" name="Test" source="/home/kali/financial_system_robot_framework/tests/test.robot">
+<test id="s1-t1" name="Verifica abertura da página" line="9">
 <kw name="New Page" library="Browser">
-<arg>https://playwright.dev</arg>
+<arg>http://localhost:3000/</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="NOT RUN" starttime="20220523 10:56:32.275" endtime="20220523 10:56:32.275"/>
+<msg timestamp="20220524 15:00:55.291" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/</msg>
+<msg timestamp="20220524 15:00:55.291" level="INFO">No browser and context was open. New browser and context was automatically opened when page is created.</msg>
+<status status="PASS" starttime="20220524 15:00:54.801" endtime="20220524 15:00:55.291"/>
 </kw>
 <kw name="Get Text" library="Browser">
 <arg>h1</arg>
 <arg>contains</arg>
-<arg>Playwright</arg>
+<arg>Sistema Financeiro</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20220523 10:56:32.277" endtime="20220523 10:56:32.277"/>
+<status status="PASS" starttime="20220524 15:00:55.292" endtime="20220524 15:00:55.328"/>
 </kw>
-<status status="FAIL" starttime="20220523 10:53:06.606" endtime="20220523 10:56:32.280">Execution terminated by signal</status>
+<kw name="Get Element States" library="Browser">
+<arg>id=month_area</arg>
+<arg>contains</arg>
+<arg>visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<msg timestamp="20220524 15:00:55.366" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220524 15:00:55.328" endtime="20220524 15:00:55.366"/>
+</kw>
+<kw name="Get Element States" library="Browser">
+<arg>id=input_area</arg>
+<arg>contains</arg>
+<arg>visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<msg timestamp="20220524 15:00:55.395" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220524 15:00:55.366" endtime="20220524 15:00:55.395"/>
+</kw>
+<kw name="Get Element States" library="Browser">
+<arg>id=table_area</arg>
+<arg>contains</arg>
+<arg>visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<msg timestamp="20220524 15:00:55.424" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220524 15:00:55.396" endtime="20220524 15:00:55.424"/>
+</kw>
+<status status="PASS" starttime="20220524 15:00:54.796" endtime="20220524 15:00:55.424"/>
 </test>
-<status status="FAIL" starttime="20220523 10:49:40.712" endtime="20220523 10:56:32.286"/>
+<test id="s1-t2" name="Verifica scroll de meses" line="17">
+<kw name="New Page" library="Browser">
+<arg>http://localhost:3000/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20220524 15:00:55.730" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/</msg>
+<msg timestamp="20220524 15:00:55.730" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20220524 15:00:55.447" endtime="20220524 15:00:55.730"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${current_month_title}</var>
+<arg>id=mount_title</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20220524 15:00:55.758" level="INFO">${current_month_title} = Maio de 2022</msg>
+<status status="PASS" starttime="20220524 15:00:55.730" endtime="20220524 15:00:55.758"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>id=arrow_rigth</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220524 15:00:55.759" endtime="20220524 15:00:55.793"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${new_month_title}</var>
+<arg>id=mount_title</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20220524 15:00:55.806" level="INFO">${new_month_title} = Junho de 2022</msg>
+<status status="PASS" starttime="20220524 15:00:55.794" endtime="20220524 15:00:55.806"/>
+</kw>
+<kw name="Should Not Be Equal" library="BuiltIn">
+<arg>${current_month_title}</arg>
+<arg>${new_month_title}</arg>
+<doc>Fails if the given objects are equal.</doc>
+<status status="PASS" starttime="20220524 15:00:55.806" endtime="20220524 15:00:55.807"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>id=arrow_left</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220524 15:00:55.807" endtime="20220524 15:00:55.838"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${new_month_title}</var>
+<arg>id=mount_title</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20220524 15:00:55.851" level="INFO">${new_month_title} = Maio de 2022</msg>
+<status status="PASS" starttime="20220524 15:00:55.838" endtime="20220524 15:00:55.851"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${current_month_title}</arg>
+<arg>${new_month_title}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20220524 15:00:55.851" endtime="20220524 15:00:55.851"/>
+</kw>
+<status status="PASS" starttime="20220524 15:00:55.445" endtime="20220524 15:00:55.851"/>
+</test>
+<test id="s1-t3" name="Seleciona data" line="27">
+<kw name="New Page" library="Browser">
+<arg>http://localhost:3000/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20220524 15:00:56.168" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/</msg>
+<msg timestamp="20220524 15:00:56.168" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20220524 15:00:55.872" endtime="20220524 15:00:56.168"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>id=date_input</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220524 15:00:56.168" endtime="20220524 15:00:56.236"/>
+</kw>
+<status status="PASS" starttime="20220524 15:00:55.869" endtime="20220524 15:00:56.236"/>
+</test>
+<status status="PASS" starttime="20220524 15:00:53.343" endtime="20220524 15:00:56.254"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Test">Test</stat>
+<stat pass="3" fail="0" skip="0" id="s1" name="Test">Test</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20220523 10:53:06.604" level="ERROR">Calling method '_start_suite' of listener 'Browser' failed: Could not connect to the playwright process at port 59393.</msg>
-<msg timestamp="20220523 10:56:32.268" level="ERROR">Calling method '_start_test' of listener 'Browser' failed: Could not connect to the playwright process at port 59393.</msg>
 </errors>
 </robot>

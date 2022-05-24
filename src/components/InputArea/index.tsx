@@ -54,10 +54,10 @@ export const InputArea = ({ onAdd }: Props) => {
   }
 
   return (
-      <C.Container>
+      <C.Container id="input_area">
         <C.InputLabel>
           <C.InputTitle>Data</C.InputTitle>
-          <C.Input type="date" value={dateField} onChange={e => setDateField(e.target.value)} />
+          <C.Input id="date_input" type="date" value={dateField} onChange={e => setDateField(e.target.value)} />
         </C.InputLabel>
         <C.InputLabel>
           <C.InputTitle>Categoria</C.InputTitle>
