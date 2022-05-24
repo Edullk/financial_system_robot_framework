@@ -61,7 +61,7 @@ export const InputArea = ({ onAdd }: Props) => {
         </C.InputLabel>
         <C.InputLabel>
           <C.InputTitle>Categoria</C.InputTitle>
-          <C.Select value={categoryField} onChange={e => setCategoryField(e.target.value)}>
+          <C.Select id="category" value={categoryField} onChange={e => setCategoryField(e.target.value)}>
             <>
               <option></option>
               {categoryKeys.map((key, index) => (

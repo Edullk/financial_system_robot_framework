@@ -8,7 +8,7 @@ ${date} =	Get Current Date
 
 Verifica abertura da página
     New Page              http://localhost:3000/
-    Get Text              h1    contains    Sistema Financeiro           
+    Get Text              h1               contains    Sistema Financeiro           
     Get Element States    id=month_area    contains    visible
     Get Element States    id=input_area    contains    visible
     Get Element States    id=table_area    contains    visible
@@ -26,8 +26,10 @@ Verifica scroll de meses
 
 Seleciona data
     New Page    http://localhost:3000/
-    Click       id=date_input
+    Type Text   id=date_input  30072022
 
-
-    
-
+Seleciona Categoria
+    New Page    http://localhost:3000/
+    Click       id=category
+    Sleep       2
+    Click       text=Aluguel
