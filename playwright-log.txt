@@ -1,0 +1,287 @@
+{"level":30,"time":"2022-05-25T17:36:26.549Z","pid":17288,"hostname":"kali","msg":"Listening on 34987"}
+{"level":30,"time":"2022-05-25T17:36:26.700Z","pid":17288,"hostname":"kali","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:26.701Z","pid":17288,"hostname":"kali","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:26.705Z","pid":17288,"hostname":"kali","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:26.705Z","pid":17288,"hostname":"kali","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:26.709Z","pid":17288,"hostname":"kali","msg":"Start of node method newPage"}
+{"level":30,"time":"2022-05-25T17:36:26.709Z","pid":17288,"hostname":"kali","msg":"currentBrowser: undefined"}
+{"level":30,"time":"2022-05-25T17:36:27.130Z","pid":17288,"hostname":"kali","msg":"Changed active context"}
+{"level":30,"time":"2022-05-25T17:36:27.285Z","pid":17288,"hostname":"kali","msg":"Video path: undefined"}
+{"level":30,"time":"2022-05-25T17:36:27.285Z","pid":17288,"hostname":"kali","msg":"Changed active page"}
+{"level":30,"time":"2022-05-25T17:36:27.300Z","pid":17288,"hostname":"kali","msg":"Error of node method  newPage"}
+================= Original suppressed error =================
+page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+=========================== logs ===========================
+navigating to "http://localhost:3000/", waiting until "load"
+============================================================
+    at newPage (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:7548:18)
+    at async PlaywrightServer.newPage (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:7773:28) {
+  name: 'Error'
+}
+=============================================================
+{"level":30,"time":"2022-05-25T17:36:27.308Z","pid":17288,"hostname":"kali","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2022-05-25T17:36:27.309Z","pid":17288,"hostname":"kali","msg":"Error of node method  takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:6272:11)
+    at takeScreenshot (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:6307:3)
+    at PlaywrightServer.takeScreenshot (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:7773:34)
+    at handleUnary (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:688:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+=============================================================
+{"level":30,"time":"2022-05-25T17:36:27.324Z","pid":17288,"hostname":"kali","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:27.325Z","pid":17288,"hostname":"kali","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:27.329Z","pid":17288,"hostname":"kali","msg":"Changed active context"}
+{"level":30,"time":"2022-05-25T17:36:27.333Z","pid":17288,"hostname":"kali","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:27.334Z","pid":17288,"hostname":"kali","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:27.338Z","pid":17288,"hostname":"kali","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2022-05-25T17:36:27.339Z","pid":17288,"hostname":"kali","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2022-05-25T17:36:27.346Z","pid":17288,"hostname":"kali","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2022-05-25T17:36:27.346Z","pid":17288,"hostname":"kali","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2022-05-25T17:36:27.352Z","pid":17288,"hostname":"kali","msg":"Changed active context"}
+{"level":30,"time":"2022-05-25T17:36:27.354Z","pid":17288,"hostname":"kali","msg":"Start of node method closeContext"}
+{"level":30,"time":"2022-05-25T17:36:27.362Z","pid":17288,"hostname":"kali","msg":"End of node method closeContext"}
+{"level":30,"time":"2022-05-25T17:36:27.365Z","pid":17288,"hostname":"kali","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:27.365Z","pid":17288,"hostname":"kali","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:27.369Z","pid":17288,"hostname":"kali","msg":"Start of node method newPage"}
+{"level":30,"time":"2022-05-25T17:36:27.369Z","pid":17288,"hostname":"kali","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2022-05-25T17:36:27.377Z","pid":17288,"hostname":"kali","msg":"Changed active context"}
+{"level":30,"time":"2022-05-25T17:36:27.438Z","pid":17288,"hostname":"kali","msg":"Video path: undefined"}
+{"level":30,"time":"2022-05-25T17:36:27.439Z","pid":17288,"hostname":"kali","msg":"Changed active page"}
+{"level":30,"time":"2022-05-25T17:36:27.446Z","pid":17288,"hostname":"kali","msg":"Error of node method  newPage"}
+================= Original suppressed error =================
+page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+=========================== logs ===========================
+navigating to "http://localhost:3000/", waiting until "load"
+============================================================
+    at newPage (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:7548:18)
+    at async PlaywrightServer.newPage (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:7773:28) {
+  name: 'Error'
+}
+=============================================================
+{"level":30,"time":"2022-05-25T17:36:27.450Z","pid":17288,"hostname":"kali","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2022-05-25T17:36:27.450Z","pid":17288,"hostname":"kali","msg":"Error of node method  takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:6272:11)
+    at takeScreenshot (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:6307:3)
+    at PlaywrightServer.takeScreenshot (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:7773:34)
+    at handleUnary (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:688:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+=============================================================
+{"level":30,"time":"2022-05-25T17:36:27.458Z","pid":17288,"hostname":"kali","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:27.459Z","pid":17288,"hostname":"kali","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:27.461Z","pid":17288,"hostname":"kali","msg":"Changed active context"}
+{"level":30,"time":"2022-05-25T17:36:27.465Z","pid":17288,"hostname":"kali","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:27.465Z","pid":17288,"hostname":"kali","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:27.467Z","pid":17288,"hostname":"kali","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2022-05-25T17:36:27.468Z","pid":17288,"hostname":"kali","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2022-05-25T17:36:27.470Z","pid":17288,"hostname":"kali","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2022-05-25T17:36:27.470Z","pid":17288,"hostname":"kali","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2022-05-25T17:36:27.484Z","pid":17288,"hostname":"kali","msg":"Changed active context"}
+{"level":30,"time":"2022-05-25T17:36:27.492Z","pid":17288,"hostname":"kali","msg":"Start of node method closeContext"}
+{"level":30,"time":"2022-05-25T17:36:27.499Z","pid":17288,"hostname":"kali","msg":"End of node method closeContext"}
+{"level":30,"time":"2022-05-25T17:36:27.504Z","pid":17288,"hostname":"kali","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:27.504Z","pid":17288,"hostname":"kali","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:27.507Z","pid":17288,"hostname":"kali","msg":"Start of node method newPage"}
+{"level":30,"time":"2022-05-25T17:36:27.507Z","pid":17288,"hostname":"kali","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2022-05-25T17:36:27.513Z","pid":17288,"hostname":"kali","msg":"Changed active context"}
+{"level":30,"time":"2022-05-25T17:36:27.561Z","pid":17288,"hostname":"kali","msg":"Video path: undefined"}
+{"level":30,"time":"2022-05-25T17:36:27.561Z","pid":17288,"hostname":"kali","msg":"Changed active page"}
+{"level":30,"time":"2022-05-25T17:36:27.575Z","pid":17288,"hostname":"kali","msg":"Error of node method  newPage"}
+================= Original suppressed error =================
+page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+=========================== logs ===========================
+navigating to "http://localhost:3000/", waiting until "load"
+============================================================
+    at newPage (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:7548:18)
+    at async PlaywrightServer.newPage (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:7773:28) {
+  name: 'Error'
+}
+=============================================================
+{"level":30,"time":"2022-05-25T17:36:27.588Z","pid":17288,"hostname":"kali","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2022-05-25T17:36:27.588Z","pid":17288,"hostname":"kali","msg":"Error of node method  takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:6272:11)
+    at takeScreenshot (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:6307:3)
+    at PlaywrightServer.takeScreenshot (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:7773:34)
+    at handleUnary (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:688:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+=============================================================
+{"level":30,"time":"2022-05-25T17:36:27.597Z","pid":17288,"hostname":"kali","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:27.598Z","pid":17288,"hostname":"kali","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:27.601Z","pid":17288,"hostname":"kali","msg":"Changed active context"}
+{"level":30,"time":"2022-05-25T17:36:27.603Z","pid":17288,"hostname":"kali","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:27.603Z","pid":17288,"hostname":"kali","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:27.605Z","pid":17288,"hostname":"kali","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2022-05-25T17:36:27.605Z","pid":17288,"hostname":"kali","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2022-05-25T17:36:27.607Z","pid":17288,"hostname":"kali","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2022-05-25T17:36:27.607Z","pid":17288,"hostname":"kali","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2022-05-25T17:36:27.611Z","pid":17288,"hostname":"kali","msg":"Changed active context"}
+{"level":30,"time":"2022-05-25T17:36:27.619Z","pid":17288,"hostname":"kali","msg":"Start of node method closeContext"}
+{"level":30,"time":"2022-05-25T17:36:27.629Z","pid":17288,"hostname":"kali","msg":"End of node method closeContext"}
+{"level":30,"time":"2022-05-25T17:36:27.632Z","pid":17288,"hostname":"kali","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:27.632Z","pid":17288,"hostname":"kali","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:27.634Z","pid":17288,"hostname":"kali","msg":"Start of node method newPage"}
+{"level":30,"time":"2022-05-25T17:36:27.634Z","pid":17288,"hostname":"kali","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2022-05-25T17:36:27.640Z","pid":17288,"hostname":"kali","msg":"Changed active context"}
+{"level":30,"time":"2022-05-25T17:36:27.689Z","pid":17288,"hostname":"kali","msg":"Video path: undefined"}
+{"level":30,"time":"2022-05-25T17:36:27.689Z","pid":17288,"hostname":"kali","msg":"Changed active page"}
+{"level":30,"time":"2022-05-25T17:36:27.697Z","pid":17288,"hostname":"kali","msg":"Error of node method  newPage"}
+================= Original suppressed error =================
+page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+=========================== logs ===========================
+navigating to "http://localhost:3000/", waiting until "load"
+============================================================
+    at newPage (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:7548:18)
+    at async PlaywrightServer.newPage (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:7773:28) {
+  name: 'Error'
+}
+=============================================================
+{"level":30,"time":"2022-05-25T17:36:27.700Z","pid":17288,"hostname":"kali","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2022-05-25T17:36:27.700Z","pid":17288,"hostname":"kali","msg":"Error of node method  takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:6272:11)
+    at takeScreenshot (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:6307:3)
+    at PlaywrightServer.takeScreenshot (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:7773:34)
+    at handleUnary (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:688:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+=============================================================
+{"level":30,"time":"2022-05-25T17:36:27.705Z","pid":17288,"hostname":"kali","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:27.705Z","pid":17288,"hostname":"kali","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:27.709Z","pid":17288,"hostname":"kali","msg":"Changed active context"}
+{"level":30,"time":"2022-05-25T17:36:27.711Z","pid":17288,"hostname":"kali","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:27.711Z","pid":17288,"hostname":"kali","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:27.716Z","pid":17288,"hostname":"kali","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2022-05-25T17:36:27.716Z","pid":17288,"hostname":"kali","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2022-05-25T17:36:27.718Z","pid":17288,"hostname":"kali","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2022-05-25T17:36:27.718Z","pid":17288,"hostname":"kali","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2022-05-25T17:36:27.723Z","pid":17288,"hostname":"kali","msg":"Changed active context"}
+{"level":30,"time":"2022-05-25T17:36:27.725Z","pid":17288,"hostname":"kali","msg":"Start of node method closeContext"}
+{"level":30,"time":"2022-05-25T17:36:27.734Z","pid":17288,"hostname":"kali","msg":"End of node method closeContext"}
+{"level":30,"time":"2022-05-25T17:36:27.737Z","pid":17288,"hostname":"kali","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:27.738Z","pid":17288,"hostname":"kali","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:27.740Z","pid":17288,"hostname":"kali","msg":"Start of node method newPage"}
+{"level":30,"time":"2022-05-25T17:36:27.740Z","pid":17288,"hostname":"kali","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2022-05-25T17:36:27.744Z","pid":17288,"hostname":"kali","msg":"Changed active context"}
+{"level":30,"time":"2022-05-25T17:36:27.791Z","pid":17288,"hostname":"kali","msg":"Video path: undefined"}
+{"level":30,"time":"2022-05-25T17:36:27.791Z","pid":17288,"hostname":"kali","msg":"Changed active page"}
+{"level":30,"time":"2022-05-25T17:36:27.802Z","pid":17288,"hostname":"kali","msg":"Error of node method  newPage"}
+================= Original suppressed error =================
+page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+=========================== logs ===========================
+navigating to "http://localhost:3000/", waiting until "load"
+============================================================
+    at newPage (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:7548:18)
+    at async PlaywrightServer.newPage (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:7773:28) {
+  name: 'Error'
+}
+=============================================================
+{"level":30,"time":"2022-05-25T17:36:27.805Z","pid":17288,"hostname":"kali","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2022-05-25T17:36:27.805Z","pid":17288,"hostname":"kali","msg":"Error of node method  takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:6272:11)
+    at takeScreenshot (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:6307:3)
+    at PlaywrightServer.takeScreenshot (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:7773:34)
+    at handleUnary (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:688:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+=============================================================
+{"level":30,"time":"2022-05-25T17:36:27.810Z","pid":17288,"hostname":"kali","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:27.811Z","pid":17288,"hostname":"kali","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:27.813Z","pid":17288,"hostname":"kali","msg":"Changed active context"}
+{"level":30,"time":"2022-05-25T17:36:27.815Z","pid":17288,"hostname":"kali","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:27.815Z","pid":17288,"hostname":"kali","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:27.817Z","pid":17288,"hostname":"kali","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2022-05-25T17:36:27.817Z","pid":17288,"hostname":"kali","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2022-05-25T17:36:27.819Z","pid":17288,"hostname":"kali","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2022-05-25T17:36:27.819Z","pid":17288,"hostname":"kali","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2022-05-25T17:36:27.824Z","pid":17288,"hostname":"kali","msg":"Changed active context"}
+{"level":30,"time":"2022-05-25T17:36:27.826Z","pid":17288,"hostname":"kali","msg":"Start of node method closeContext"}
+{"level":30,"time":"2022-05-25T17:36:27.836Z","pid":17288,"hostname":"kali","msg":"End of node method closeContext"}
+{"level":30,"time":"2022-05-25T17:36:27.840Z","pid":17288,"hostname":"kali","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:27.840Z","pid":17288,"hostname":"kali","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:27.842Z","pid":17288,"hostname":"kali","msg":"Start of node method newPage"}
+{"level":30,"time":"2022-05-25T17:36:27.843Z","pid":17288,"hostname":"kali","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2022-05-25T17:36:27.847Z","pid":17288,"hostname":"kali","msg":"Changed active context"}
+{"level":30,"time":"2022-05-25T17:36:27.888Z","pid":17288,"hostname":"kali","msg":"Video path: undefined"}
+{"level":30,"time":"2022-05-25T17:36:27.888Z","pid":17288,"hostname":"kali","msg":"Changed active page"}
+{"level":30,"time":"2022-05-25T17:36:27.896Z","pid":17288,"hostname":"kali","msg":"Error of node method  newPage"}
+================= Original suppressed error =================
+page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+=========================== logs ===========================
+navigating to "http://localhost:3000/", waiting until "load"
+============================================================
+    at newPage (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:7548:18)
+    at async PlaywrightServer.newPage (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:7773:28) {
+  name: 'Error'
+}
+=============================================================
+{"level":30,"time":"2022-05-25T17:36:27.899Z","pid":17288,"hostname":"kali","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2022-05-25T17:36:27.899Z","pid":17288,"hostname":"kali","msg":"Error of node method  takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:6272:11)
+    at takeScreenshot (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:6307:3)
+    at PlaywrightServer.takeScreenshot (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:7773:34)
+    at handleUnary (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:688:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+=============================================================
+{"level":30,"time":"2022-05-25T17:36:27.903Z","pid":17288,"hostname":"kali","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:27.904Z","pid":17288,"hostname":"kali","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:27.908Z","pid":17288,"hostname":"kali","msg":"Changed active context"}
+{"level":30,"time":"2022-05-25T17:36:27.910Z","pid":17288,"hostname":"kali","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:27.910Z","pid":17288,"hostname":"kali","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:27.912Z","pid":17288,"hostname":"kali","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2022-05-25T17:36:27.912Z","pid":17288,"hostname":"kali","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2022-05-25T17:36:27.915Z","pid":17288,"hostname":"kali","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2022-05-25T17:36:27.915Z","pid":17288,"hostname":"kali","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2022-05-25T17:36:27.920Z","pid":17288,"hostname":"kali","msg":"Changed active context"}
+{"level":30,"time":"2022-05-25T17:36:27.922Z","pid":17288,"hostname":"kali","msg":"Start of node method closeContext"}
+{"level":30,"time":"2022-05-25T17:36:27.929Z","pid":17288,"hostname":"kali","msg":"End of node method closeContext"}
+{"level":30,"time":"2022-05-25T17:36:27.934Z","pid":17288,"hostname":"kali","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:27.934Z","pid":17288,"hostname":"kali","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:27.943Z","pid":17288,"hostname":"kali","msg":"Start of node method newPage"}
+{"level":30,"time":"2022-05-25T17:36:27.943Z","pid":17288,"hostname":"kali","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2022-05-25T17:36:27.946Z","pid":17288,"hostname":"kali","msg":"Changed active context"}
+{"level":30,"time":"2022-05-25T17:36:28.008Z","pid":17288,"hostname":"kali","msg":"Video path: undefined"}
+{"level":30,"time":"2022-05-25T17:36:28.009Z","pid":17288,"hostname":"kali","msg":"Changed active page"}
+{"level":30,"time":"2022-05-25T17:36:28.015Z","pid":17288,"hostname":"kali","msg":"Error of node method  newPage"}
+================= Original suppressed error =================
+page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+=========================== logs ===========================
+navigating to "http://localhost:3000/", waiting until "load"
+============================================================
+    at newPage (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:7548:18)
+    at async PlaywrightServer.newPage (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:7773:28) {
+  name: 'Error'
+}
+=============================================================
+{"level":30,"time":"2022-05-25T17:36:28.019Z","pid":17288,"hostname":"kali","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2022-05-25T17:36:28.019Z","pid":17288,"hostname":"kali","msg":"Error of node method  takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:6272:11)
+    at takeScreenshot (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:6307:3)
+    at PlaywrightServer.takeScreenshot (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:7773:34)
+    at handleUnary (/home/kali/.local/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:688:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+=============================================================
+{"level":30,"time":"2022-05-25T17:36:28.023Z","pid":17288,"hostname":"kali","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:28.023Z","pid":17288,"hostname":"kali","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:28.025Z","pid":17288,"hostname":"kali","msg":"Changed active context"}
+{"level":30,"time":"2022-05-25T17:36:28.027Z","pid":17288,"hostname":"kali","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:28.027Z","pid":17288,"hostname":"kali","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:28.029Z","pid":17288,"hostname":"kali","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2022-05-25T17:36:28.029Z","pid":17288,"hostname":"kali","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2022-05-25T17:36:28.032Z","pid":17288,"hostname":"kali","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2022-05-25T17:36:28.033Z","pid":17288,"hostname":"kali","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2022-05-25T17:36:28.039Z","pid":17288,"hostname":"kali","msg":"Changed active context"}
+{"level":30,"time":"2022-05-25T17:36:28.044Z","pid":17288,"hostname":"kali","msg":"Start of node method closeContext"}
+{"level":30,"time":"2022-05-25T17:36:28.060Z","pid":17288,"hostname":"kali","msg":"End of node method closeContext"}
+{"level":30,"time":"2022-05-25T17:36:28.065Z","pid":17288,"hostname":"kali","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:28.065Z","pid":17288,"hostname":"kali","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2022-05-25T17:36:28.099Z","pid":17288,"hostname":"kali","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2022-05-25T17:36:28.118Z","pid":17288,"hostname":"kali","msg":"End of node method closeAllBrowsers"}

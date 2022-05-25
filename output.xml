@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.4 on linux)" generated="20220525 13:36:25.625" rpa="false" schemaversion="3">
+<suite id="s1" name="Financial System Robot Framework" source="/home/kali/financial_system_robot_framework">
+<suite id="s1-s1" name="Tests" source="/home/kali/financial_system_robot_framework/tests">
+<suite id="s1-s1-s1" name="Test" source="/home/kali/financial_system_robot_framework/tests/test.robot">
+<test id="s1-s1-s1-t1" name="Verifica abertura da página" line="9">
+<kw name="New Page" library="Browser">
+<arg>http://localhost:3000/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20220525 13:36:27.311" level="WARN">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg timestamp="20220525 13:36:27.312" level="FAIL">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+=========================== logs ===========================
+navigating to "http://localhost:3000/", waiting until "load"
+============================================================</msg>
+<status status="FAIL" starttime="20220525 13:36:26.707" endtime="20220525 13:36:27.318"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>h1</arg>
+<arg>contains</arg>
+<arg>Sistema Financeiro</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20220525 13:36:27.318" endtime="20220525 13:36:27.319"/>
+</kw>
+<kw name="Get Element States" library="Browser">
+<arg>id=month_area</arg>
+<arg>contains</arg>
+<arg>visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20220525 13:36:27.321" endtime="20220525 13:36:27.321"/>
+</kw>
+<kw name="Get Element States" library="Browser">
+<arg>id=input_area</arg>
+<arg>contains</arg>
+<arg>visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20220525 13:36:27.322" endtime="20220525 13:36:27.322"/>
+</kw>
+<kw name="Get Element States" library="Browser">
+<arg>id=table_area</arg>
+<arg>contains</arg>
+<arg>visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20220525 13:36:27.323" endtime="20220525 13:36:27.323"/>
+</kw>
+<status status="FAIL" starttime="20220525 13:36:26.704" endtime="20220525 13:36:27.323">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+=========================== logs ===========================
+navigating to "http://localhost:3000/", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-s1-s1-t2" name="Verifica scroll de meses" line="17">
+<kw name="New Page" library="Browser">
+<arg>http://localhost:3000/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20220525 13:36:27.453" level="WARN">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg timestamp="20220525 13:36:27.453" level="FAIL">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+=========================== logs ===========================
+navigating to "http://localhost:3000/", waiting until "load"
+============================================================</msg>
+<status status="FAIL" starttime="20220525 13:36:27.368" endtime="20220525 13:36:27.454"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${current_month_title}</var>
+<arg>id=mount_title</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20220525 13:36:27.454" endtime="20220525 13:36:27.454"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>id=arrow_rigth</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20220525 13:36:27.454" endtime="20220525 13:36:27.454"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${new_month_title}</var>
+<arg>id=mount_title</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20220525 13:36:27.454" endtime="20220525 13:36:27.454"/>
+</kw>
+<kw name="Should Not Be Equal" library="BuiltIn">
+<arg>${current_month_title}</arg>
+<arg>${new_month_title}</arg>
+<doc>Fails if the given objects are equal.</doc>
+<status status="NOT RUN" starttime="20220525 13:36:27.454" endtime="20220525 13:36:27.454"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>id=arrow_left</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20220525 13:36:27.455" endtime="20220525 13:36:27.455"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${new_month_title}</var>
+<arg>id=mount_title</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20220525 13:36:27.455" endtime="20220525 13:36:27.455"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${current_month_title}</arg>
+<arg>${new_month_title}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" starttime="20220525 13:36:27.455" endtime="20220525 13:36:27.455"/>
+</kw>
+<status status="FAIL" starttime="20220525 13:36:27.364" endtime="20220525 13:36:27.455">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+=========================== logs ===========================
+navigating to "http://localhost:3000/", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-s1-s1-t3" name="Validacoes de data" line="27">
+<kw name="New Page" library="Browser">
+<arg>http://localhost:3000/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20220525 13:36:27.594" level="WARN">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg timestamp="20220525 13:36:27.595" level="FAIL">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+=========================== logs ===========================
+navigating to "http://localhost:3000/", waiting until "load"
+============================================================</msg>
+<status status="FAIL" starttime="20220525 13:36:27.506" endtime="20220525 13:36:27.595"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>id=date_input</arg>
+<arg>25052022</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20220525 13:36:27.596" endtime="20220525 13:36:27.596"/>
+</kw>
+<status status="FAIL" starttime="20220525 13:36:27.503" endtime="20220525 13:36:27.597">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+=========================== logs ===========================
+navigating to "http://localhost:3000/", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-s1-s1-t4" name="Validacoes de Categoria" line="31">
+<kw name="New Page" library="Browser">
+<arg>http://localhost:3000/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20220525 13:36:27.702" level="WARN">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg timestamp="20220525 13:36:27.702" level="FAIL">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+=========================== logs ===========================
+navigating to "http://localhost:3000/", waiting until "load"
+============================================================</msg>
+<status status="FAIL" starttime="20220525 13:36:27.633" endtime="20220525 13:36:27.703"/>
+</kw>
+<kw name="Select Options By" library="Browser">
+<arg>id=category</arg>
+<arg>value</arg>
+<arg>rent</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20220525 13:36:27.703" endtime="20220525 13:36:27.703"/>
+</kw>
+<status status="FAIL" starttime="20220525 13:36:27.631" endtime="20220525 13:36:27.704">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+=========================== logs ===========================
+navigating to "http://localhost:3000/", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-s1-s1-t5" name="Validacoes de titulo" line="35">
+<kw name="New Page" library="Browser">
+<arg>http://localhost:3000/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20220525 13:36:27.808" level="WARN">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg timestamp="20220525 13:36:27.808" level="FAIL">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+=========================== logs ===========================
+navigating to "http://localhost:3000/", waiting until "load"
+============================================================</msg>
+<status status="FAIL" starttime="20220525 13:36:27.739" endtime="20220525 13:36:27.809"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>id=title</arg>
+<arg>Casa</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20220525 13:36:27.809" endtime="20220525 13:36:27.809"/>
+</kw>
+<status status="FAIL" starttime="20220525 13:36:27.736" endtime="20220525 13:36:27.810">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+=========================== logs ===========================
+navigating to "http://localhost:3000/", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-s1-s1-t6" name="Validacoes de valor" line="39">
+<kw name="New Page" library="Browser">
+<arg>http://localhost:3000/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20220525 13:36:27.901" level="WARN">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg timestamp="20220525 13:36:27.901" level="FAIL">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+=========================== logs ===========================
+navigating to "http://localhost:3000/", waiting until "load"
+============================================================</msg>
+<status status="FAIL" starttime="20220525 13:36:27.842" endtime="20220525 13:36:27.901"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>id=value</arg>
+<arg>1000</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20220525 13:36:27.902" endtime="20220525 13:36:27.902"/>
+</kw>
+<status status="FAIL" starttime="20220525 13:36:27.838" endtime="20220525 13:36:27.903">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+=========================== logs ===========================
+navigating to "http://localhost:3000/", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-s1-s1-t7" name="Verifica a adição de novo gasto" line="43">
+<kw name="New Page" library="Browser">
+<arg>http://localhost:3000/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20220525 13:36:28.020" level="WARN">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg timestamp="20220525 13:36:28.021" level="FAIL">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+=========================== logs ===========================
+navigating to "http://localhost:3000/", waiting until "load"
+============================================================</msg>
+<status status="FAIL" starttime="20220525 13:36:27.942" endtime="20220525 13:36:28.021"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>id=date_input</arg>
+<arg>25052022</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20220525 13:36:28.022" endtime="20220525 13:36:28.022"/>
+</kw>
+<kw name="Select Options By" library="Browser">
+<arg>id=category</arg>
+<arg>value</arg>
+<arg>rent</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20220525 13:36:28.022" endtime="20220525 13:36:28.022"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>id=title</arg>
+<arg>Casa</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20220525 13:36:28.022" endtime="20220525 13:36:28.022"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>id=value</arg>
+<arg>1000</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20220525 13:36:28.022" endtime="20220525 13:36:28.022"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>id=add</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20220525 13:36:28.022" endtime="20220525 13:36:28.022"/>
+</kw>
+<status status="FAIL" starttime="20220525 13:36:27.931" endtime="20220525 13:36:28.023">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+=========================== logs ===========================
+navigating to "http://localhost:3000/", waiting until "load"
+============================================================</status>
+</test>
+<status status="FAIL" starttime="20220525 13:36:25.647" endtime="20220525 13:36:28.063"/>
+</suite>
+<status status="FAIL" starttime="20220525 13:36:25.646" endtime="20220525 13:36:28.069"/>
+</suite>
+<status status="FAIL" starttime="20220525 13:36:25.627" endtime="20220525 13:36:28.071"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="7" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="7" skip="0" id="s1" name="Financial System Robot Framework">Financial System Robot Framework</stat>
+<stat pass="0" fail="7" skip="0" id="s1-s1" name="Tests">Financial System Robot Framework.Tests</stat>
+<stat pass="0" fail="7" skip="0" id="s1-s1-s1" name="Test">Financial System Robot Framework.Tests.Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220525 13:36:27.311" level="WARN">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg timestamp="20220525 13:36:27.453" level="WARN">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg timestamp="20220525 13:36:27.594" level="WARN">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg timestamp="20220525 13:36:27.702" level="WARN">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg timestamp="20220525 13:36:27.808" level="WARN">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg timestamp="20220525 13:36:27.901" level="WARN">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg timestamp="20220525 13:36:28.020" level="WARN">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+</errors>
+</robot>

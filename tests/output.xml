@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.4 on linux)" generated="20220525 13:42:21.996" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.4 on linux)" generated="20220525 14:14:06.368" rpa="false" schemaversion="3">
 <suite id="s1" name="Tests" source="/home/kali/financial_system_robot_framework/tests">
 <suite id="s1-s1" name="Test" source="/home/kali/financial_system_robot_framework/tests/test.robot">
 <test id="s1-s1-t1" name="Verifica abertura da página" line="9">
@@ -8,9 +8,9 @@
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<msg timestamp="20220525 13:42:23.975" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/</msg>
-<msg timestamp="20220525 13:42:23.975" level="INFO">No browser and context was open. New browser and context was automatically opened when page is created.</msg>
-<status status="PASS" starttime="20220525 13:42:23.445" endtime="20220525 13:42:23.975"/>
+<msg timestamp="20220525 14:14:07.782" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/</msg>
+<msg timestamp="20220525 14:14:07.782" level="INFO">No browser and context was open. New browser and context was automatically opened when page is created.</msg>
+<status status="PASS" starttime="20220525 14:14:07.289" endtime="20220525 14:14:07.782"/>
 </kw>
 <kw name="Get Text" library="Browser">
 <arg>h1</arg>
@@ -20,7 +20,7 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220525 13:42:23.975" endtime="20220525 13:42:24.025"/>
+<status status="PASS" starttime="20220525 14:14:07.782" endtime="20220525 14:14:07.839"/>
 </kw>
 <kw name="Get Element States" library="Browser">
 <arg>id=month_area</arg>
@@ -30,8 +30,8 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20220525 13:42:24.062" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20220525 13:42:24.026" endtime="20220525 13:42:24.062"/>
+<msg timestamp="20220525 14:14:07.904" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220525 14:14:07.839" endtime="20220525 14:14:07.904"/>
 </kw>
 <kw name="Get Element States" library="Browser">
 <arg>id=input_area</arg>
@@ -41,8 +41,8 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20220525 13:42:24.092" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20220525 13:42:24.063" endtime="20220525 13:42:24.092"/>
+<msg timestamp="20220525 14:14:07.955" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220525 14:14:07.904" endtime="20220525 14:14:07.955"/>
 </kw>
 <kw name="Get Element States" library="Browser">
 <arg>id=table_area</arg>
@@ -52,20 +52,30 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<msg timestamp="20220525 13:42:24.122" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
-<status status="PASS" starttime="20220525 13:42:24.092" endtime="20220525 13:42:24.122"/>
+<msg timestamp="20220525 14:14:08.011" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220525 14:14:07.955" endtime="20220525 14:14:08.011"/>
 </kw>
-<status status="PASS" starttime="20220525 13:42:23.440" endtime="20220525 13:42:24.123"/>
+<status status="PASS" starttime="20220525 14:14:07.286" endtime="20220525 14:14:08.011"/>
 </test>
 <test id="s1-s1-t2" name="Verifica scroll de meses" line="17">
+<kw name="New Browser" library="Browser">
+<arg>chromium</arg>
+<arg>headless=false</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20220525 14:14:08.050" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "/home/kali/financial_system_robot_framework/tests/browser/traces/4e5059f0-0f15-40fb-a857-9bcdddbfd634"}</msg>
+<msg timestamp="20220525 14:14:08.464" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"/home/kali/financial_system_robot_framework/tests/browser/traces/4e5059f0-0f15-40fb-a857-9bcdddbfd634"}</msg>
+<status status="PASS" starttime="20220525 14:14:08.048" endtime="20220525 14:14:08.465"/>
+</kw>
 <kw name="New Page" library="Browser">
 <arg>http://localhost:3000/</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<msg timestamp="20220525 13:42:24.443" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/</msg>
-<msg timestamp="20220525 13:42:24.444" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<status status="PASS" starttime="20220525 13:42:24.146" endtime="20220525 13:42:24.444"/>
+<msg timestamp="20220525 14:14:09.228" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/</msg>
+<msg timestamp="20220525 14:14:09.228" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20220525 14:14:08.465" endtime="20220525 14:14:09.228"/>
 </kw>
 <kw name="Get Text" library="Browser">
 <var>${current_month_title}</var>
@@ -74,15 +84,15 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<msg timestamp="20220525 13:42:24.473" level="INFO">${current_month_title} = Maio de 2022</msg>
-<status status="PASS" starttime="20220525 13:42:24.444" endtime="20220525 13:42:24.473"/>
+<msg timestamp="20220525 14:14:09.279" level="INFO">${current_month_title} = Maio de 2022</msg>
+<status status="PASS" starttime="20220525 14:14:09.229" endtime="20220525 14:14:09.279"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>id=arrow_rigth</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220525 13:42:24.473" endtime="20220525 13:42:24.528"/>
+<status status="PASS" starttime="20220525 14:14:09.279" endtime="20220525 14:14:09.350"/>
 </kw>
 <kw name="Get Text" library="Browser">
 <var>${new_month_title}</var>
@@ -91,21 +101,21 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<msg timestamp="20220525 13:42:24.540" level="INFO">${new_month_title} = Junho de 2022</msg>
-<status status="PASS" starttime="20220525 13:42:24.528" endtime="20220525 13:42:24.540"/>
+<msg timestamp="20220525 14:14:09.376" level="INFO">${new_month_title} = Junho de 2022</msg>
+<status status="PASS" starttime="20220525 14:14:09.350" endtime="20220525 14:14:09.376"/>
 </kw>
 <kw name="Should Not Be Equal" library="BuiltIn">
 <arg>${current_month_title}</arg>
 <arg>${new_month_title}</arg>
 <doc>Fails if the given objects are equal.</doc>
-<status status="PASS" starttime="20220525 13:42:24.540" endtime="20220525 13:42:24.540"/>
+<status status="PASS" starttime="20220525 14:14:09.376" endtime="20220525 14:14:09.377"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>id=arrow_left</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220525 13:42:24.541" endtime="20220525 13:42:24.567"/>
+<status status="PASS" starttime="20220525 14:14:09.377" endtime="20220525 14:14:09.434"/>
 </kw>
 <kw name="Get Text" library="Browser">
 <var>${new_month_title}</var>
@@ -114,47 +124,47 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<msg timestamp="20220525 13:42:24.578" level="INFO">${new_month_title} = Maio de 2022</msg>
-<status status="PASS" starttime="20220525 13:42:24.567" endtime="20220525 13:42:24.578"/>
+<msg timestamp="20220525 14:14:09.460" level="INFO">${new_month_title} = Maio de 2022</msg>
+<status status="PASS" starttime="20220525 14:14:09.434" endtime="20220525 14:14:09.460"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${current_month_title}</arg>
 <arg>${new_month_title}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20220525 13:42:24.578" endtime="20220525 13:42:24.578"/>
+<status status="PASS" starttime="20220525 14:14:09.460" endtime="20220525 14:14:09.461"/>
 </kw>
-<status status="PASS" starttime="20220525 13:42:24.144" endtime="20220525 13:42:24.578"/>
+<status status="PASS" starttime="20220525 14:14:08.046" endtime="20220525 14:14:09.461"/>
 </test>
-<test id="s1-s1-t3" name="Validacoes de data" line="27">
+<test id="s1-s1-t3" name="Validacoes de data" line="29">
 <kw name="New Page" library="Browser">
 <arg>http://localhost:3000/</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<msg timestamp="20220525 13:42:24.865" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/</msg>
-<msg timestamp="20220525 13:42:24.865" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<status status="PASS" starttime="20220525 13:42:24.599" endtime="20220525 13:42:24.865"/>
+<msg timestamp="20220525 14:14:10.026" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/</msg>
+<msg timestamp="20220525 14:14:10.026" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20220525 14:14:09.526" endtime="20220525 14:14:10.026"/>
 </kw>
 <kw name="Type Text" library="Browser">
 <arg>id=date_input</arg>
-<arg>25052022</arg>
+<arg>252022</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20220525 13:42:24.866" level="INFO">Types the text '25052022' in the given field.</msg>
-<status status="PASS" starttime="20220525 13:42:24.866" endtime="20220525 13:42:24.936"/>
+<msg timestamp="20220525 14:14:10.027" level="INFO">Types the text '252022' in the given field.</msg>
+<status status="PASS" starttime="20220525 14:14:10.027" endtime="20220525 14:14:10.151"/>
 </kw>
-<status status="PASS" starttime="20220525 13:42:24.597" endtime="20220525 13:42:24.936"/>
+<status status="PASS" starttime="20220525 14:14:09.517" endtime="20220525 14:14:10.152"/>
 </test>
-<test id="s1-s1-t4" name="Validacoes de Categoria" line="31">
+<test id="s1-s1-t4" name="Validacoes de Categoria" line="34">
 <kw name="New Page" library="Browser">
 <arg>http://localhost:3000/</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<msg timestamp="20220525 13:42:25.282" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/</msg>
-<msg timestamp="20220525 13:42:25.282" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<status status="PASS" starttime="20220525 13:42:24.955" endtime="20220525 13:42:25.282"/>
+<msg timestamp="20220525 14:14:10.641" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/</msg>
+<msg timestamp="20220525 14:14:10.642" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20220525 14:14:10.211" endtime="20220525 14:14:10.642"/>
 </kw>
 <kw name="Select Options By" library="Browser">
 <arg>id=category</arg>
@@ -163,19 +173,19 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Selects options from select element found by ``selector``.</doc>
-<status status="PASS" starttime="20220525 13:42:25.282" endtime="20220525 13:42:25.363"/>
+<status status="PASS" starttime="20220525 14:14:10.642" endtime="20220525 14:14:10.792"/>
 </kw>
-<status status="PASS" starttime="20220525 13:42:24.953" endtime="20220525 13:42:25.363"/>
+<status status="PASS" starttime="20220525 14:14:10.207" endtime="20220525 14:14:10.792"/>
 </test>
-<test id="s1-s1-t5" name="Validacoes de titulo" line="35">
+<test id="s1-s1-t5" name="Validacoes de titulo" line="39">
 <kw name="New Page" library="Browser">
 <arg>http://localhost:3000/</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<msg timestamp="20220525 13:42:25.626" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/</msg>
-<msg timestamp="20220525 13:42:25.627" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<status status="PASS" starttime="20220525 13:42:25.381" endtime="20220525 13:42:25.627"/>
+<msg timestamp="20220525 14:14:11.365" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/</msg>
+<msg timestamp="20220525 14:14:11.365" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20220525 14:14:10.837" endtime="20220525 14:14:11.365"/>
 </kw>
 <kw name="Type Text" library="Browser">
 <arg>id=title</arg>
@@ -183,20 +193,20 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20220525 13:42:25.627" level="INFO">Types the text 'Casa' in the given field.</msg>
-<status status="PASS" starttime="20220525 13:42:25.627" endtime="20220525 13:42:25.682"/>
+<msg timestamp="20220525 14:14:11.365" level="INFO">Types the text 'Casa' in the given field.</msg>
+<status status="PASS" starttime="20220525 14:14:11.365" endtime="20220525 14:14:11.452"/>
 </kw>
-<status status="PASS" starttime="20220525 13:42:25.379" endtime="20220525 13:42:25.683"/>
+<status status="PASS" starttime="20220525 14:14:10.833" endtime="20220525 14:14:11.452"/>
 </test>
-<test id="s1-s1-t6" name="Validacoes de valor" line="39">
+<test id="s1-s1-t6" name="Validacoes de valor" line="43">
 <kw name="New Page" library="Browser">
 <arg>http://localhost:3000/</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<msg timestamp="20220525 13:42:26.019" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/</msg>
-<msg timestamp="20220525 13:42:26.019" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<status status="PASS" starttime="20220525 13:42:25.704" endtime="20220525 13:42:26.019"/>
+<msg timestamp="20220525 14:14:11.997" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/</msg>
+<msg timestamp="20220525 14:14:11.997" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20220525 14:14:11.544" endtime="20220525 14:14:11.997"/>
 </kw>
 <kw name="Type Text" library="Browser">
 <arg>id=value</arg>
@@ -204,29 +214,35 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20220525 13:42:26.019" level="INFO">Types the text '1000' in the given field.</msg>
-<status status="PASS" starttime="20220525 13:42:26.019" endtime="20220525 13:42:26.075"/>
+<msg timestamp="20220525 14:14:11.998" level="INFO">Types the text '1000' in the given field.</msg>
+<status status="PASS" starttime="20220525 14:14:11.997" endtime="20220525 14:14:12.102"/>
 </kw>
-<status status="PASS" starttime="20220525 13:42:25.701" endtime="20220525 13:42:26.075"/>
+<status status="PASS" starttime="20220525 14:14:11.535" endtime="20220525 14:14:12.102"/>
 </test>
-<test id="s1-s1-t7" name="Verifica a adição de novo gasto" line="43">
+<test id="s1-s1-t7" name="Verifica a adição de novo gasto" line="47">
 <kw name="New Page" library="Browser">
 <arg>http://localhost:3000/</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<msg timestamp="20220525 13:42:26.381" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/</msg>
-<msg timestamp="20220525 13:42:26.381" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<status status="PASS" starttime="20220525 13:42:26.096" endtime="20220525 13:42:26.381"/>
+<msg timestamp="20220525 14:14:12.644" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/</msg>
+<msg timestamp="20220525 14:14:12.644" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20220525 14:14:12.171" endtime="20220525 14:14:12.645"/>
 </kw>
 <kw name="Type Text" library="Browser">
 <arg>id=date_input</arg>
-<arg>25052022</arg>
+<arg>05252022</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20220525 13:42:26.382" level="INFO">Types the text '25052022' in the given field.</msg>
-<status status="PASS" starttime="20220525 13:42:26.382" endtime="20220525 13:42:26.439"/>
+<msg timestamp="20220525 14:14:12.645" level="INFO">Types the text '05252022' in the given field.</msg>
+<status status="PASS" starttime="20220525 14:14:12.645" endtime="20220525 14:14:12.739"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220525 14:14:15.740" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220525 14:14:12.739" endtime="20220525 14:14:15.741"/>
 </kw>
 <kw name="Select Options By" library="Browser">
 <arg>id=category</arg>
@@ -235,7 +251,13 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Selects options from select element found by ``selector``.</doc>
-<status status="PASS" starttime="20220525 13:42:26.439" endtime="20220525 13:42:26.504"/>
+<status status="PASS" starttime="20220525 14:14:15.742" endtime="20220525 14:14:15.887"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220525 14:14:18.888" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220525 14:14:15.888" endtime="20220525 14:14:18.889"/>
 </kw>
 <kw name="Type Text" library="Browser">
 <arg>id=title</arg>
@@ -243,8 +265,14 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20220525 13:42:26.505" level="INFO">Types the text 'Casa' in the given field.</msg>
-<status status="PASS" starttime="20220525 13:42:26.505" endtime="20220525 13:42:26.542"/>
+<msg timestamp="20220525 14:14:18.889" level="INFO">Types the text 'Casa' in the given field.</msg>
+<status status="PASS" starttime="20220525 14:14:18.889" endtime="20220525 14:14:18.974"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220525 14:14:21.975" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220525 14:14:18.974" endtime="20220525 14:14:21.975"/>
 </kw>
 <kw name="Type Text" library="Browser">
 <arg>id=value</arg>
@@ -252,30 +280,33 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20220525 13:42:26.542" level="INFO">Types the text '1000' in the given field.</msg>
-<status status="PASS" starttime="20220525 13:42:26.542" endtime="20220525 13:42:26.578"/>
+<msg timestamp="20220525 14:14:21.976" level="INFO">Types the text '1000' in the given field.</msg>
+<status status="PASS" starttime="20220525 14:14:21.976" endtime="20220525 14:14:22.074"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220525 14:14:25.075" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220525 14:14:22.074" endtime="20220525 14:14:25.076"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>id=add</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220525 13:42:26.579" endtime="20220525 13:42:26.660"/>
+<status status="PASS" starttime="20220525 14:14:25.077" endtime="20220525 14:14:25.193"/>
 </kw>
-<kw name="Promise To" library="Browser">
-<var>${promise}</var>
-<arg>Wait For Alert</arg>
-<arg>action=accept</arg>
-<tag>Wait</tag>
-<doc>Wrap a Browser library keyword and make it a promise.</doc>
-<msg timestamp="20220525 13:42:26.663" level="INFO">${promise} = &lt;Future at 0x7f23e2683700 state=running&gt;</msg>
-<status status="PASS" starttime="20220525 13:42:26.661" endtime="20220525 13:42:26.663"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220525 14:14:28.194" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220525 14:14:25.193" endtime="20220525 14:14:28.195"/>
 </kw>
-<status status="PASS" starttime="20220525 13:42:26.093" endtime="20220525 13:42:26.664"/>
+<status status="PASS" starttime="20220525 14:14:12.163" endtime="20220525 14:14:28.196"/>
 </test>
-<status status="PASS" starttime="20220525 13:42:22.011" endtime="20220525 13:42:36.697"/>
+<status status="PASS" starttime="20220525 14:14:06.387" endtime="20220525 14:14:28.322"/>
 </suite>
-<status status="PASS" starttime="20220525 13:42:21.997" endtime="20220525 13:42:36.754"/>
+<status status="PASS" starttime="20220525 14:14:06.369" endtime="20220525 14:14:28.330"/>
 </suite>
 <statistics>
 <total>
@@ -289,10 +320,5 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20220525 13:42:26.664" level="WARN">Waiting unresolved promises at the end of test 'Verifica a adição de novo gasto'</msg>
-<msg timestamp="20220525 13:42:36.693" level="ERROR">Calling method '_end_test' of listener 'Browser' failed: TimeoutError: page.waitForEvent: Timeout 10000ms exceeded while waiting for event "dialog"
-=========================== logs ===========================
-waiting for event "dialog"
-============================================================</msg>
 </errors>
 </robot>
