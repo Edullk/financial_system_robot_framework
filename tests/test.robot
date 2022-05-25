@@ -24,12 +24,35 @@ Verifica scroll de meses
     ${new_month_title}=         Get Text                    id=mount_title
     Should Be Equal             ${current_month_title}      ${new_month_title}
 
-Seleciona data
+Validacoes de data
     New Page    http://localhost:3000/
-    Type Text   id=date_input  30072022
+    Type Text   id=date_input  25052022
 
-Seleciona Categoria
+Validacoes de Categoria
+    New Page             http://localhost:3000/
+    Select Options By    id=category    value       rent
+
+Validacoes de titulo
     New Page    http://localhost:3000/
-    Click       id=category
-    Sleep       2
-    Click       text=Aluguel
+    Type Text   id=title    Casa
+
+Validacoes de valor
+    New Page    http://localhost:3000/
+    Type Text   id=value    1000
+
+Verifica a adição de novo gasto
+    New Page            http://localhost:3000/
+    Type Text           id=date_input           25052022    
+    Select Options By   id=category             value       rent
+    Type Text           id=title                Casa
+    Type Text           id=value                1000
+    Click               id=add
+    
+
+
+
+
+
+
+
+
