@@ -9,10 +9,10 @@ type Props = {
 
 export const TableItem = ({ item }: Props) => {
     return (
-        <C.TableLine>
+        <C.TableLine id="table_line">
             <C.TableColumn>{formatDate(item.date)}</C.TableColumn>
             <C.TableColumn>
-                <C.Category color={categories[item.category].color}>
+                <C.Category id="table_category_value" color={categories[item.category].color}>
                     {categories[item.category].title}
                 </C.Category>
             </C.TableColumn>

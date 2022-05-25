@@ -72,15 +72,15 @@ export const InputArea = ({ onAdd }: Props) => {
         </C.InputLabel>
         <C.InputLabel>
           <C.InputTitle>Título</C.InputTitle>
-          <C.Input type="text" value={titleField} onChange={e => setTitleField(e.target.value)} />
+          <C.Input id="title" type="text" value={titleField} onChange={e => setTitleField(e.target.value)} />
         </C.InputLabel>
         <C.InputLabel>
           <C.InputTitle>Valor</C.InputTitle>
-          <C.Input type="number" value={valueField} onChange={e => setValueField(parseFloat(e.target.value))} />
+          <C.Input id="value" type="number" value={valueField} onChange={e => setValueField(parseFloat(e.target.value))} />
         </C.InputLabel>
         <C.InputLabel>
           <C.InputTitle>&nbsp;</C.InputTitle>
-          <C.Button onClick={handleAddEvent}>Adicionar</C.Button>
+          <C.Button id="add" onClick={handleAddEvent}>Adicionar</C.Button>
         </C.InputLabel>
       </C.Container>
   );
