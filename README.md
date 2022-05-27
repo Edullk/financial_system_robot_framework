@@ -40,7 +40,7 @@ Trata-se de um projeto feito em ReactJS para controle financeiro e todas as funÃ
 
 ## ğŸ¨ Layout
 
-<div align="center" style="display:flex; flex-direction:row;">
+<div align="center" style="display:flex, flex-direction:row">
     <img alt="GoBarber" title="#GoBarber" src="https://github.com/Edullk/financial_system_robot_framework/blob/main/src/assets/screem.PNG" width="50%" />
     <img alt="GoBarber" title="#GoBarber" src="https://github.com/Edullk/financial_system_robot_framework/blob/main/src/assets/tests.PNG" width="50%" />
 </div>
