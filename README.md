@@ -1,5 +1,5 @@
 <div align="center">
-    <img alt="GitHub language count" src="https://github.com/Edullk/financial_system_robot_framework/blob/main/src/assets/cap.png">
+    <img alt="GitHub language count" width="100%" src="https://github.com/Edullk/financial_system_robot_framework/blob/main/src/assets/cap.png">
 </div>
 <h1 align="center">
     <img alt="GoBarber" title="#delicinha" src=".github/gobarber.png" width="250px" />
