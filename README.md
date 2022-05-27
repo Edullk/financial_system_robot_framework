@@ -1,44 +1,93 @@
-# Expense Tracker with React
+<div align="center">
+    <img alt="GoBarber" title="#delicinha" src=".github/gostack.png" width="250px" />
+</div>
+<h1 align="center">
+    <img alt="GoBarber" title="#delicinha" src=".github/gobarber.png" width="250px" />
+    
+</h1>
 
-This project was made in React during a challenge called "5 Projetos em 5 Dias" by [B7Web](https://b7web.com.br).
+<h4 align="center">
+  🚀 Desafio GoBarber 11.0
+</h4>
 
-## First Steps
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/WallysonGalvao/rocketseat-gobarber">
 
-`npm install`
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/WallysonGalvao/rocketseat-gobarber">
+  
+  <a href="https://github.com/WallysonGalvao/rocketseat-gobarber/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/WallysonGalvao/rocketseat-gobarber">
+  </a>
 
-## Available Scripts
+  <a href="https://github.com/WallysonGalvao/rocketseat-gobarber/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/WallysonGalvao/rocketseat-gobarber">
+  </a>
 
-In the project directory, you can run:
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+</p>
 
-### `npm start`
+<p align="center">
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-executando">Executando</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-licença">Licença</a>
+</p>
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 💻 Projeto
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Esse projeto foi desenvolvido durante o Bootcamp da Rocketseat. Trata-se de um projeto fullstack para uma barbearia ficticia, a GoBarber, o projeto consiste na parte frontend(React), mobile(React Native) e backend(NodeJs).
 
-### `npm test`
+## 🎨 Layout
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p align="center">
+    <img alt="GoBarber" title="#GoBarber" src=".github/capa.png" width="720px" />
+</p>
 
-### `npm run build`
+Você pode utilizar a seguinte URL para visualizar todas as telas: [Visualizar](https://www.figma.com/file/BXCihtXXh9p37lGsENV614/GoBarber?node-id=34%3A1180)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## :rocket: Tecnologias
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [Typescript](https://www.typescriptlang.org/)
+- [Node.js](https://nodejs.org/en/) | [Express](https://expressjs.com/pt-br/)
+- [React](https://reactjs.org/) | [React Native](https://reactnative.dev/)
+- [Docker](https://www.docker.com/)
+- [PostgreSQL](https://www.postgresql.org/) | [TypeORM](https://typeorm.io/)
 
-### `npm run eject`
+## :notebook: Executando
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Dentro do **README** de cada subpasta do projeto é detalhado como executar as aplicações separadamente.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+# Clone este repositório
+$ git clone https://github.com/WallysonGalvao/rocketseat-gobarber.git
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Acesse a pasta do projeto no seu terminal/cmd
+$ cd rocketseat-gobarber/backend
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Instale as dependências
+$ yarn install
+
+# Execute a aplicação
+$ yarn start
+```
+
+Realizar os comandos acima para as demais pastas **[frontend e backend]**.
+
+## :construction: Como contribuir para o projeto
+
+1. Faça um **fork** do projeto.
+2. Crie uma nova branch com as suas alterações: `git checkout -b my-awesome-feature`
+3. Salve as alterações e crie uma mensagem de commit contando o que você fez: `git commit -m "feature: My awesome feature"`
+4. Envie as suas alterações: `git push origin my-awesome-feature`
+   > Caso tenha alguma dúvida confira este [guia de como contribuir no GitHub](https://github.com/firstcontributions/first-contributions)
+
+## :memo: Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+
+---
+
+Feito com horas em frente ao :computer: por [Wallyson Galvão](https://www.linkedin.com/in/wallyson-galvao/)
