@@ -42,7 +42,7 @@ Trata-se de um projeto feito em ReactJS para controle financeiro e todas as fun√
 
 
 <div align="center">
-    <img alt=""  src="https://github.com/Edullk/financial_system_robot_framework/blob/main/src/assets/screem.PNG" width="90%" />
+    <img src="https://github.com/Edullk/financial_system_robot_framework/blob/main/src/assets/screem.PNG" width="90%" />
     <br/>
     <img src="https://github.com/Edullk/financial_system_robot_framework/blob/main/src/assets/tests.PNG" width="90%" />
      <br/>
