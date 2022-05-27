@@ -11,7 +11,7 @@
 </h4>
 
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/WallysonGalvao/rocketseat-gobarber">
+  <img alt="GitHub language count" src="https://github.com/Edullk/financial_system_robot_framework/blob/main/src/assets/cap.png">
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/WallysonGalvao/rocketseat-gobarber">
   
