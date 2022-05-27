@@ -7,11 +7,11 @@
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/Edullk/financial_system_robot_framework">
   
   <a href="https://github.com/WallysonGalvao/rocketseat-gobarber/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/WallysonGalvao/rocketseat-gobarber">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Edullk/financial_system_robot_framework">
   </a>
 
   <a href="https://github.com/WallysonGalvao/rocketseat-gobarber/issues">
-    <img alt="Repository issues" src="https://img.shields.io/github/issues/WallysonGalvao/rocketseat-gobarber">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/Edullk/financial_system_robot_framework">
   </a>
 
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
