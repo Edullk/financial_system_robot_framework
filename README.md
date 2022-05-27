@@ -41,7 +41,7 @@ Trata-se de um projeto feito em ReactJS para controle financeiro e todas as fun�
 ## 🎨 Layout
 
 <p align="center">
-    <img alt="GoBarber" title="#GoBarber" src=".github/capa.png" width="720px" />
+    <img alt="GoBarber" title="#GoBarber" src="https://github.com/Edullk/financial_system_robot_framework/blob/main/src/assets/screem.PNG" width="720px" />
 </p>
 
 Você pode utilizar a seguinte URL para visualizar todas as telas: [Visualizar](https://www.figma.com/file/BXCihtXXh9p37lGsENV614/GoBarber?node-id=34%3A1180)
