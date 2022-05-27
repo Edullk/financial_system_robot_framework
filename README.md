@@ -41,12 +41,12 @@ Trata-se de um projeto feito em ReactJS para controle financeiro e todas as funÃ
 ## ğŸ¨ Layout
 
 
-<div align="center">
+<div>
     <img src="https://github.com/Edullk/financial_system_robot_framework/blob/main/src/assets/screem.PNG" width="90%" />
     <br/>
     <img src="https://github.com/Edullk/financial_system_robot_framework/blob/main/src/assets/tests.PNG" width="90%" />
      <br/>
-    <img style="margin-left:10%" src="https://github.com/Edullk/financial_system_robot_framework/blob/main/src/assets/tests_run.gif" width="90%" />
+    <img src="https://github.com/Edullk/financial_system_robot_framework/blob/main/src/assets/tests_run.gif" width="90%" />
 </div>
 
 ## :rocket: Tecnologias
