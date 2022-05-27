@@ -10,15 +10,15 @@ type Props = {
 export const TableItem = ({ item }: Props) => {
     return (
         <C.TableLine id="table_line">
-            <C.TableColumn>{formatDate(item.date)}</C.TableColumn>
+            <C.TableColumn id="table_item_date">{formatDate(item.date)}</C.TableColumn>
             <C.TableColumn>
-                <C.Category id="table_category_value" color={categories[item.category].color}>
+                <C.Category id={"table_item_category_"+categories[item.category].title} color={categories[item.category].color}>
                     {categories[item.category].title}
                 </C.Category>
             </C.TableColumn>
-            <C.TableColumn>{item.title}</C.TableColumn>
+            <C.TableColumn id="table_item_name">{item.title}</C.TableColumn>
             <C.TableColumn>
-                <C.Value color={categories[item.category].expense ? 'red' : 'green'}>
+                <C.Value id="table_item_value" color={categories[item.category].expense ? 'red' : 'green'}>
                     R$ {item.value}
                 </C.Value>
             </C.TableColumn>

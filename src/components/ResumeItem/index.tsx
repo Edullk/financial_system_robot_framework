@@ -10,7 +10,7 @@ export const ResumeItem = ({ title, value, color }: Props) => {
     return (
         <C.Container>
             <C.Title>{title}</C.Title>
-            <C.Info color={color}>R$ {value}</C.Info>
+            <C.Info id={title+"_"+value.toString()} color={color}>R$ {value}</C.Info>
         </C.Container>
     );
 }
