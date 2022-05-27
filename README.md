@@ -1,18 +1,10 @@
 <div align="center">
     <img alt="GitHub language count" width="100%" src="https://github.com/Edullk/financial_system_robot_framework/blob/main/src/assets/cap.png">
 </div>
-<h1 align="center">
-    <img alt="GoBarber" title="#delicinha" src=".github/gobarber.png" width="250px" />
-    
-</h1>
-
-<h4 align="center">
-  🚀 Financial app tests
-</h4>
 
 <p align="center">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/WallysonGalvao/rocketseat-gobarber">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Edullk/financial_system_robot_framework">
   
   <a href="https://github.com/WallysonGalvao/rocketseat-gobarber/commits/master">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/WallysonGalvao/rocketseat-gobarber">
