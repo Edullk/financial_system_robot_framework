@@ -1,44 +1,100 @@
-# Expense Tracker with React
+<div align="center">
+    <img alt="GoBarber" title="#delicinha" src=".github/gostack.png" width="250px" />
+</div>
+<h1 align="center">
+    <img alt="GoBarber" title="#delicinha" src=".github/gobarber.png" width="250px" />
+    
+</h1>
 
-This project was made in React during a challenge called "5 Projetos em 5 Dias" by [B7Web](https://b7web.com.br).
+<h4 align="center">
+  🚀 Financial app tests
+</h4>
 
-## First Steps
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/WallysonGalvao/rocketseat-gobarber">
 
-`npm install`
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/WallysonGalvao/rocketseat-gobarber">
+  
+  <a href="https://github.com/WallysonGalvao/rocketseat-gobarber/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/WallysonGalvao/rocketseat-gobarber">
+  </a>
 
-## Available Scripts
+  <a href="https://github.com/WallysonGalvao/rocketseat-gobarber/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/WallysonGalvao/rocketseat-gobarber">
+  </a>
 
-In the project directory, you can run:
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+</p>
 
-### `npm start`
+<p align="center">
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-executando">Executando</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-licença">Licença</a>
+</p>
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 💻 Projeto
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Trata-se de um projeto feito em ReactJS para controle financeiro e todas as funções automatizadas com testes via robot framework.
 
-### `npm test`
+## 🎨 Layout
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p align="center">
+    <img alt="GoBarber" title="#GoBarber" src=".github/capa.png" width="720px" />
+</p>
 
-### `npm run build`
+Você pode utilizar a seguinte URL para visualizar todas as telas: [Visualizar](https://www.figma.com/file/BXCihtXXh9p37lGsENV614/GoBarber?node-id=34%3A1180)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## :rocket: Tecnologias
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [Robot Framework](https://robotframework.org/)
+- [Browser Library](https://marketsquare.github.io/robotframework-browser/Browser.html)
+- [React](https://reactjs.org/)
 
-### `npm run eject`
+## :notebook: Executando
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Executando o projeto
+```bash
+# Clone este repositório
+$ git clone https://github.com/Edullk/financial_system_robot_framework.git
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Acesse a pasta do projeto no seu terminal/cmd
+$ cd financial_system_robot_framework
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Instale as dependências
+$ yarn install
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Execute a aplicação
+$ yarn start
+```
+Executando o os testes
+
+```bash
+(Nescessário Python e Node já configurados)
+
+# Instalando o robot
+$ pip install robotframework
+
+# Instalando o browser library
+$ pip install robotframework-browser
+
+# Iniciando os navegadores
+$ python -m Browser.entry init
+
+
+# Executando os testes
+# Na pasta do projeto no seu terminal/cmd
+$ cd tests
+$ python -m robot .
+```
+
+
+
+## :memo: Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+
+---
