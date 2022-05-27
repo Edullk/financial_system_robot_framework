@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.4 on linux)" generated="20220527 11:19:07.074" rpa="false" schemaversion="3">
+<suite id="s1" name="Tests" source="/home/kali/financial_system_robot_framework/tests">
+<suite id="s1-s1" name="Test" source="/home/kali/financial_system_robot_framework/tests/test.robot">
+<test id="s1-s1-t1" name="Verifica abertura da página" line="7">
+<kw name="New Browser" library="Browser">
+<arg>chromium</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20220527 11:19:08.148" level="INFO">{"browser": "chromium", "headless": true, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "/home/kali/financial_system_robot_framework/tests/browser/traces/5d220b0e-a2b9-49b4-9694-6075c3ff0f0d"}</msg>
+<msg timestamp="20220527 11:19:08.540" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"/home/kali/financial_system_robot_framework/tests/browser/traces/5d220b0e-a2b9-49b4-9694-6075c3ff0f0d"}</msg>
+<status status="PASS" starttime="20220527 11:19:08.147" endtime="20220527 11:19:08.541"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>http://localhost:3000/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20220527 11:19:09.103" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/</msg>
+<msg timestamp="20220527 11:19:09.103" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20220527 11:19:08.541" endtime="20220527 11:19:09.105"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>h1</arg>
+<arg>contains</arg>
+<arg>Sistema Financeiro</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:09.106" endtime="20220527 11:19:09.220"/>
+</kw>
+<kw name="Get Element States" library="Browser">
+<arg>id=month_area</arg>
+<arg>contains</arg>
+<arg>visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<msg timestamp="20220527 11:19:09.308" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220527 11:19:09.221" endtime="20220527 11:19:09.308"/>
+</kw>
+<kw name="Get Element States" library="Browser">
+<arg>id=input_area</arg>
+<arg>contains</arg>
+<arg>visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<msg timestamp="20220527 11:19:09.374" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220527 11:19:09.309" endtime="20220527 11:19:09.374"/>
+</kw>
+<kw name="Get Element States" library="Browser">
+<arg>id=table_area</arg>
+<arg>contains</arg>
+<arg>visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<msg timestamp="20220527 11:19:09.443" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<status status="PASS" starttime="20220527 11:19:09.374" endtime="20220527 11:19:09.443"/>
+</kw>
+<status status="PASS" starttime="20220527 11:19:08.137" endtime="20220527 11:19:09.445"/>
+</test>
+<test id="s1-s1-t2" name="Verifica scroll de meses" line="16">
+<kw name="New Page" library="Browser">
+<arg>http://localhost:3000/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20220527 11:19:09.811" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/</msg>
+<msg timestamp="20220527 11:19:09.811" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20220527 11:19:09.505" endtime="20220527 11:19:09.811"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${current_month_title}</var>
+<arg>id=mount_title</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20220527 11:19:09.869" level="INFO">${current_month_title} = Maio de 2022</msg>
+<status status="PASS" starttime="20220527 11:19:09.811" endtime="20220527 11:19:09.869"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>id=arrow_rigth</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:09.869" endtime="20220527 11:19:09.956"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${new_month_title}</var>
+<arg>id=mount_title</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20220527 11:19:09.985" level="INFO">${new_month_title} = Junho de 2022</msg>
+<status status="PASS" starttime="20220527 11:19:09.957" endtime="20220527 11:19:09.986"/>
+</kw>
+<kw name="Should Not Be Equal" library="BuiltIn">
+<arg>${current_month_title}</arg>
+<arg>${new_month_title}</arg>
+<doc>Fails if the given objects are equal.</doc>
+<status status="PASS" starttime="20220527 11:19:09.986" endtime="20220527 11:19:09.988"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>id=arrow_left</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:09.988" endtime="20220527 11:19:10.040"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${new_month_title}</var>
+<arg>id=mount_title</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20220527 11:19:10.067" level="INFO">${new_month_title} = Maio de 2022</msg>
+<status status="PASS" starttime="20220527 11:19:10.041" endtime="20220527 11:19:10.067"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${current_month_title}</arg>
+<arg>${new_month_title}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20220527 11:19:10.067" endtime="20220527 11:19:10.067"/>
+</kw>
+<status status="PASS" starttime="20220527 11:19:09.501" endtime="20220527 11:19:10.067"/>
+</test>
+<test id="s1-s1-t3" name="Validacoes de data" line="26">
+<kw name="New Page" library="Browser">
+<arg>http://localhost:3000/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20220527 11:19:10.433" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/</msg>
+<msg timestamp="20220527 11:19:10.433" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20220527 11:19:10.118" endtime="20220527 11:19:10.433"/>
+</kw>
+<kw name="Get Current Date" library="DateTime">
+<var>${date}</var>
+<arg>result_format=%m%d%Y</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<msg timestamp="20220527 11:19:10.437" level="INFO">${date} = 05272022</msg>
+<status status="PASS" starttime="20220527 11:19:10.433" endtime="20220527 11:19:10.438"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>id=date_input</arg>
+<arg>${date}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220527 11:19:10.438" level="INFO">Types the text '05272022' in the given field.</msg>
+<status status="PASS" starttime="20220527 11:19:10.438" endtime="20220527 11:19:10.564"/>
+</kw>
+<status status="PASS" starttime="20220527 11:19:10.115" endtime="20220527 11:19:10.565"/>
+</test>
+<test id="s1-s1-t4" name="Validacoes de Categoria" line="31">
+<kw name="New Page" library="Browser">
+<arg>http://localhost:3000/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20220527 11:19:10.896" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/</msg>
+<msg timestamp="20220527 11:19:10.896" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20220527 11:19:10.600" endtime="20220527 11:19:10.896"/>
+</kw>
+<kw name="Select Options By" library="Browser">
+<arg>id=category</arg>
+<arg>value</arg>
+<arg>rent</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:10.897" endtime="20220527 11:19:11.042"/>
+</kw>
+<status status="PASS" starttime="20220527 11:19:10.597" endtime="20220527 11:19:11.043"/>
+</test>
+<test id="s1-s1-t5" name="Validacoes de titulo" line="35">
+<kw name="New Page" library="Browser">
+<arg>http://localhost:3000/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20220527 11:19:11.376" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/</msg>
+<msg timestamp="20220527 11:19:11.376" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20220527 11:19:11.085" endtime="20220527 11:19:11.376"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>id=title</arg>
+<arg>Casa</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220527 11:19:11.376" level="INFO">Types the text 'Casa' in the given field.</msg>
+<status status="PASS" starttime="20220527 11:19:11.376" endtime="20220527 11:19:11.465"/>
+</kw>
+<status status="PASS" starttime="20220527 11:19:11.083" endtime="20220527 11:19:11.465"/>
+</test>
+<test id="s1-s1-t6" name="Validacoes de valor" line="39">
+<kw name="New Page" library="Browser">
+<arg>http://localhost:3000/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20220527 11:19:11.791" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/</msg>
+<msg timestamp="20220527 11:19:11.791" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20220527 11:19:11.509" endtime="20220527 11:19:11.791"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>id=value</arg>
+<arg>1000</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220527 11:19:11.791" level="INFO">Types the text '1000' in the given field.</msg>
+<status status="PASS" starttime="20220527 11:19:11.791" endtime="20220527 11:19:11.896"/>
+</kw>
+<status status="PASS" starttime="20220527 11:19:11.505" endtime="20220527 11:19:11.896"/>
+</test>
+<test id="s1-s1-t7" name="Verifica a adição de nova despesa" line="43">
+<kw name="New Page" library="Browser">
+<arg>http://localhost:3000/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20220527 11:19:12.235" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/</msg>
+<msg timestamp="20220527 11:19:12.235" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20220527 11:19:11.935" endtime="20220527 11:19:12.235"/>
+</kw>
+<kw name="Get Current Date" library="DateTime">
+<var>${date}</var>
+<arg>result_format=%m%d%Y</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<msg timestamp="20220527 11:19:12.236" level="INFO">${date} = 05272022</msg>
+<status status="PASS" starttime="20220527 11:19:12.235" endtime="20220527 11:19:12.236"/>
+</kw>
+<kw name="Get Current Date" library="DateTime">
+<var>${date_format}</var>
+<arg>result_format=%d/%m/%Y</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<msg timestamp="20220527 11:19:12.237" level="INFO">${date_format} = 27/05/2022</msg>
+<status status="PASS" starttime="20220527 11:19:12.236" endtime="20220527 11:19:12.237"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>id=date_input</arg>
+<arg>${date}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220527 11:19:12.238" level="INFO">Types the text '05272022' in the given field.</msg>
+<status status="PASS" starttime="20220527 11:19:12.237" endtime="20220527 11:19:12.338"/>
+</kw>
+<kw name="Select Options By" library="Browser">
+<arg>id=category</arg>
+<arg>value</arg>
+<arg>rent</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:12.339" endtime="20220527 11:19:12.458"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>id=title</arg>
+<arg>Casa</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220527 11:19:12.458" level="INFO">Types the text 'Casa' in the given field.</msg>
+<status status="PASS" starttime="20220527 11:19:12.458" endtime="20220527 11:19:12.524"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>id=value</arg>
+<arg>1000</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220527 11:19:12.524" level="INFO">Types the text '1000' in the given field.</msg>
+<status status="PASS" starttime="20220527 11:19:12.524" endtime="20220527 11:19:12.610"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>id=add</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:12.610" endtime="20220527 11:19:12.688"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>id=table_item_date</arg>
+<arg>contains</arg>
+<arg>${date_format}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:12.689" endtime="20220527 11:19:12.711"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>id=table_item_category_Aluguel</arg>
+<arg>contains</arg>
+<arg>Aluguel</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:12.711" endtime="20220527 11:19:12.744"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>id=table_item_name</arg>
+<arg>contains</arg>
+<arg>Casa</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:12.744" endtime="20220527 11:19:12.782"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>id=table_item_value</arg>
+<arg>contains</arg>
+<arg>R$ 1000</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:12.782" endtime="20220527 11:19:12.804"/>
+</kw>
+<status status="PASS" starttime="20220527 11:19:11.933" endtime="20220527 11:19:12.804"/>
+</test>
+<test id="s1-s1-t8" name="Verifica valor e soma des despesas" line="57">
+<kw name="New Page" library="Browser">
+<arg>http://localhost:3000/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20220527 11:19:13.145" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/</msg>
+<msg timestamp="20220527 11:19:13.145" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20220527 11:19:12.840" endtime="20220527 11:19:13.145"/>
+</kw>
+<kw name="Get Current Date" library="DateTime">
+<var>${date}</var>
+<arg>result_format=%m%d%Y</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<msg timestamp="20220527 11:19:13.146" level="INFO">${date} = 05272022</msg>
+<status status="PASS" starttime="20220527 11:19:13.146" endtime="20220527 11:19:13.146"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>id=date_input</arg>
+<arg>${date}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220527 11:19:13.146" level="INFO">Types the text '05272022' in the given field.</msg>
+<status status="PASS" starttime="20220527 11:19:13.146" endtime="20220527 11:19:13.240"/>
+</kw>
+<kw name="Select Options By" library="Browser">
+<arg>id=category</arg>
+<arg>value</arg>
+<arg>rent</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:13.240" endtime="20220527 11:19:13.351"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>id=title</arg>
+<arg>Casa</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220527 11:19:13.352" level="INFO">Types the text 'Casa' in the given field.</msg>
+<status status="PASS" starttime="20220527 11:19:13.352" endtime="20220527 11:19:13.410"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>id=value</arg>
+<arg>1000</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220527 11:19:13.410" level="INFO">Types the text '1000' in the given field.</msg>
+<status status="PASS" starttime="20220527 11:19:13.410" endtime="20220527 11:19:13.487"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>id=add</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:13.487" endtime="20220527 11:19:13.573"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>id=table_item_category_Aluguel</arg>
+<arg>contains</arg>
+<arg>Aluguel</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:13.573" endtime="20220527 11:19:13.597"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>id=Despesas_1000</arg>
+<arg>contains</arg>
+<arg>R$ 1000</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:13.598" endtime="20220527 11:19:13.624"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>id=date_input</arg>
+<arg>${date}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220527 11:19:13.625" level="INFO">Types the text '05272022' in the given field.</msg>
+<status status="PASS" starttime="20220527 11:19:13.624" endtime="20220527 11:19:13.709"/>
+</kw>
+<kw name="Select Options By" library="Browser">
+<arg>id=category</arg>
+<arg>value</arg>
+<arg>food</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:13.710" endtime="20220527 11:19:13.829"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>id=title</arg>
+<arg>Jantar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220527 11:19:13.829" level="INFO">Types the text 'Jantar' in the given field.</msg>
+<status status="PASS" starttime="20220527 11:19:13.829" endtime="20220527 11:19:13.894"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>id=value</arg>
+<arg>100</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220527 11:19:13.894" level="INFO">Types the text '100' in the given field.</msg>
+<status status="PASS" starttime="20220527 11:19:13.894" endtime="20220527 11:19:13.958"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>id=add</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:13.959" endtime="20220527 11:19:14.043"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>id=table_item_category_Alimentação</arg>
+<arg>contains</arg>
+<arg>Alimentação</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:14.043" endtime="20220527 11:19:14.074"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>id=Despesas_1100</arg>
+<arg>contains</arg>
+<arg>R$ 1100</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:14.074" endtime="20220527 11:19:14.103"/>
+</kw>
+<status status="PASS" starttime="20220527 11:19:12.834" endtime="20220527 11:19:14.104"/>
+</test>
+<test id="s1-s1-t9" name="Verifica a adição de nova receita" line="75">
+<kw name="New Page" library="Browser">
+<arg>http://localhost:3000/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20220527 11:19:14.436" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/</msg>
+<msg timestamp="20220527 11:19:14.436" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20220527 11:19:14.145" endtime="20220527 11:19:14.437"/>
+</kw>
+<kw name="Get Current Date" library="DateTime">
+<var>${date}</var>
+<arg>result_format=%m%d%Y</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<msg timestamp="20220527 11:19:14.437" level="INFO">${date} = 05272022</msg>
+<status status="PASS" starttime="20220527 11:19:14.437" endtime="20220527 11:19:14.437"/>
+</kw>
+<kw name="Get Current Date" library="DateTime">
+<var>${date_format}</var>
+<arg>result_format=%d/%m/%Y</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<msg timestamp="20220527 11:19:14.438" level="INFO">${date_format} = 27/05/2022</msg>
+<status status="PASS" starttime="20220527 11:19:14.438" endtime="20220527 11:19:14.438"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>id=date_input</arg>
+<arg>${date}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220527 11:19:14.439" level="INFO">Types the text '05272022' in the given field.</msg>
+<status status="PASS" starttime="20220527 11:19:14.438" endtime="20220527 11:19:14.533"/>
+</kw>
+<kw name="Select Options By" library="Browser">
+<arg>id=category</arg>
+<arg>value</arg>
+<arg>salary</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:14.534" endtime="20220527 11:19:14.645"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>id=title</arg>
+<arg>Pagamento</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220527 11:19:14.645" level="INFO">Types the text 'Pagamento' in the given field.</msg>
+<status status="PASS" starttime="20220527 11:19:14.645" endtime="20220527 11:19:14.728"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>id=value</arg>
+<arg>2000</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220527 11:19:14.729" level="INFO">Types the text '2000' in the given field.</msg>
+<status status="PASS" starttime="20220527 11:19:14.728" endtime="20220527 11:19:14.810"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>id=add</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:14.810" endtime="20220527 11:19:14.887"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>id=table_item_date</arg>
+<arg>contains</arg>
+<arg>${date_format}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:14.888" endtime="20220527 11:19:14.913"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>id=table_item_category_Salário</arg>
+<arg>contains</arg>
+<arg>Salário</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:14.914" endtime="20220527 11:19:14.941"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>id=table_item_name</arg>
+<arg>contains</arg>
+<arg>Pagamento</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:14.941" endtime="20220527 11:19:14.962"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>id=table_item_value</arg>
+<arg>contains</arg>
+<arg>R$ 2000</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:14.962" endtime="20220527 11:19:14.984"/>
+</kw>
+<status status="PASS" starttime="20220527 11:19:14.143" endtime="20220527 11:19:14.985"/>
+</test>
+<test id="s1-s1-t10" name="Verifica valor e soma das receitas" line="89">
+<kw name="New Page" library="Browser">
+<arg>http://localhost:3000/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20220527 11:19:15.314" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/</msg>
+<msg timestamp="20220527 11:19:15.314" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20220527 11:19:15.017" endtime="20220527 11:19:15.314"/>
+</kw>
+<kw name="Get Current Date" library="DateTime">
+<var>${date}</var>
+<arg>result_format=%m%d%Y</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<msg timestamp="20220527 11:19:15.315" level="INFO">${date} = 05272022</msg>
+<status status="PASS" starttime="20220527 11:19:15.315" endtime="20220527 11:19:15.315"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>id=date_input</arg>
+<arg>${date}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220527 11:19:15.315" level="INFO">Types the text '05272022' in the given field.</msg>
+<status status="PASS" starttime="20220527 11:19:15.315" endtime="20220527 11:19:15.416"/>
+</kw>
+<kw name="Select Options By" library="Browser">
+<arg>id=category</arg>
+<arg>value</arg>
+<arg>salary</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:15.416" endtime="20220527 11:19:15.527"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>id=title</arg>
+<arg>Pagamento</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220527 11:19:15.528" level="INFO">Types the text 'Pagamento' in the given field.</msg>
+<status status="PASS" starttime="20220527 11:19:15.527" endtime="20220527 11:19:15.611"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>id=value</arg>
+<arg>2000</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220527 11:19:15.611" level="INFO">Types the text '2000' in the given field.</msg>
+<status status="PASS" starttime="20220527 11:19:15.611" endtime="20220527 11:19:15.679"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>id=add</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:15.679" endtime="20220527 11:19:15.749"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>id=table_item_category_Salário</arg>
+<arg>contains</arg>
+<arg>Salário</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:15.749" endtime="20220527 11:19:15.776"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>id=Receitas_2000</arg>
+<arg>contains</arg>
+<arg>R$ 2000</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:15.777" endtime="20220527 11:19:15.800"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>id=date_input</arg>
+<arg>${date}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220527 11:19:15.801" level="INFO">Types the text '05272022' in the given field.</msg>
+<status status="PASS" starttime="20220527 11:19:15.800" endtime="20220527 11:19:15.884"/>
+</kw>
+<kw name="Select Options By" library="Browser">
+<arg>id=category</arg>
+<arg>value</arg>
+<arg>salary</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:15.884" endtime="20220527 11:19:15.998"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>id=title</arg>
+<arg>Ações</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220527 11:19:15.998" level="INFO">Types the text 'Ações' in the given field.</msg>
+<status status="PASS" starttime="20220527 11:19:15.998" endtime="20220527 11:19:16.068"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>id=value</arg>
+<arg>4000</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220527 11:19:16.068" level="INFO">Types the text '4000' in the given field.</msg>
+<status status="PASS" starttime="20220527 11:19:16.068" endtime="20220527 11:19:16.137"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>id=add</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:16.137" endtime="20220527 11:19:16.210"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>id=Receitas_6000</arg>
+<arg>contains</arg>
+<arg>R$ 6000</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:16.210" endtime="20220527 11:19:16.232"/>
+</kw>
+<status status="PASS" starttime="20220527 11:19:15.014" endtime="20220527 11:19:16.232"/>
+</test>
+<test id="s1-s1-t11" name="Verifica valor e resultado do balanço" line="106">
+<kw name="New Page" library="Browser">
+<arg>http://localhost:3000/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20220527 11:19:16.560" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000/</msg>
+<msg timestamp="20220527 11:19:16.560" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20220527 11:19:16.266" endtime="20220527 11:19:16.560"/>
+</kw>
+<kw name="Get Current Date" library="DateTime">
+<var>${date}</var>
+<arg>result_format=%m%d%Y</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<msg timestamp="20220527 11:19:16.561" level="INFO">${date} = 05272022</msg>
+<status status="PASS" starttime="20220527 11:19:16.560" endtime="20220527 11:19:16.561"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>id=date_input</arg>
+<arg>${date}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220527 11:19:16.561" level="INFO">Types the text '05272022' in the given field.</msg>
+<status status="PASS" starttime="20220527 11:19:16.561" endtime="20220527 11:19:16.658"/>
+</kw>
+<kw name="Select Options By" library="Browser">
+<arg>id=category</arg>
+<arg>value</arg>
+<arg>salary</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:16.658" endtime="20220527 11:19:16.767"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>id=title</arg>
+<arg>Pagamento</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220527 11:19:16.767" level="INFO">Types the text 'Pagamento' in the given field.</msg>
+<status status="PASS" starttime="20220527 11:19:16.767" endtime="20220527 11:19:16.851"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>id=value</arg>
+<arg>2000</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220527 11:19:16.852" level="INFO">Types the text '2000' in the given field.</msg>
+<status status="PASS" starttime="20220527 11:19:16.852" endtime="20220527 11:19:16.923"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>id=add</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:16.923" endtime="20220527 11:19:16.997"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>id=table_item_category_Salário</arg>
+<arg>contains</arg>
+<arg>Salário</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:16.998" endtime="20220527 11:19:17.023"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>id=date_input</arg>
+<arg>${date}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220527 11:19:17.023" level="INFO">Types the text '05272022' in the given field.</msg>
+<status status="PASS" starttime="20220527 11:19:17.023" endtime="20220527 11:19:17.094"/>
+</kw>
+<kw name="Select Options By" library="Browser">
+<arg>id=category</arg>
+<arg>value</arg>
+<arg>rent</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:17.094" endtime="20220527 11:19:17.198"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>id=title</arg>
+<arg>Casa</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220527 11:19:17.199" level="INFO">Types the text 'Casa' in the given field.</msg>
+<status status="PASS" starttime="20220527 11:19:17.199" endtime="20220527 11:19:17.253"/>
+</kw>
+<kw name="Type Text" library="Browser">
+<arg>id=value</arg>
+<arg>1000</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220527 11:19:17.254" level="INFO">Types the text '1000' in the given field.</msg>
+<status status="PASS" starttime="20220527 11:19:17.253" endtime="20220527 11:19:17.326"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>id=add</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:17.326" endtime="20220527 11:19:17.399"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>id=table_item_category_Aluguel</arg>
+<arg>contains</arg>
+<arg>Aluguel</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:17.400" endtime="20220527 11:19:17.424"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>id=Balanço_1000</arg>
+<arg>contains</arg>
+<arg>R$ 1000</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220527 11:19:17.424" endtime="20220527 11:19:17.446"/>
+</kw>
+<status status="PASS" starttime="20220527 11:19:16.261" endtime="20220527 11:19:17.446"/>
+</test>
+<status status="PASS" starttime="20220527 11:19:07.094" endtime="20220527 11:19:17.481"/>
+</suite>
+<status status="PASS" starttime="20220527 11:19:07.075" endtime="20220527 11:19:17.486"/>
+</suite>
+<statistics>
+<total>
+<stat pass="11" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="11" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="11" fail="0" skip="0" id="s1-s1" name="Test">Tests.Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
