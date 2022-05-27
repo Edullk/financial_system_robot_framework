@@ -74,10 +74,13 @@ Executando o os testes
 
 ```bash
 (Nescessário Python e Node já configurados)
+
 # Instalando o robot
 $ pip install robotframework
+
 # Instalando o browser library
 $ pip install robotframework-browser
+
 # Iniciando os navegadores
 $ python -m Browser.entry init
 
