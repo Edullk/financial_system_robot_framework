@@ -73,9 +73,12 @@ $ yarn start
 Executando o os testes
 
 ```bash
-#Instalando as dependencias, (Nescessário Python e Node já configurados)
+(Nescessário Python e Node já configurados)
+# Instalando o robot
 $ pip install robotframework
+# Instalando o browser library
 $ pip install robotframework-browser
+# Iniciando os navegadores
 $ python -m Browser.entry init
 
 
