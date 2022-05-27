@@ -1,5 +1,5 @@
 <div align="center">
-    <img alt="GoBarber" title="#delicinha" src=".github/gostack.png" width="250px" />
+    <img alt="GitHub language count" src="https://github.com/Edullk/financial_system_robot_framework/blob/main/src/assets/cap.png">
 </div>
 <h1 align="center">
     <img alt="GoBarber" title="#delicinha" src=".github/gobarber.png" width="250px" />
@@ -11,7 +11,6 @@
 </h4>
 
 <p align="center">
-  <img alt="GitHub language count" src="https://github.com/Edullk/financial_system_robot_framework/blob/main/src/assets/cap.png">
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/WallysonGalvao/rocketseat-gobarber">
   
