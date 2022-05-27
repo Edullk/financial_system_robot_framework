@@ -7,7 +7,7 @@
 </h1>
 
 <h4 align="center">
-  🚀 Desafio GoBarber 11.0
+  🚀 Financial app tests
 </h4>
 
 <p align="center">
@@ -36,7 +36,7 @@
 
 ## 💻 Projeto
 
-Esse projeto foi desenvolvido durante o Bootcamp da Rocketseat. Trata-se de um projeto fullstack para uma barbearia ficticia, a GoBarber, o projeto consiste na parte frontend(React), mobile(React Native) e backend(NodeJs).
+Trata-se de um projeto feito em ReactJS para controle financeiro e todas as funções automatizadas com testes via robot framework.
 
 ## 🎨 Layout
 
@@ -50,22 +50,19 @@ Você pode utilizar a seguinte URL para visualizar todas as telas: [Visualizar](
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- [Typescript](https://www.typescriptlang.org/)
-- [Node.js](https://nodejs.org/en/) | [Express](https://expressjs.com/pt-br/)
-- [React](https://reactjs.org/) | [React Native](https://reactnative.dev/)
-- [Docker](https://www.docker.com/)
-- [PostgreSQL](https://www.postgresql.org/) | [TypeORM](https://typeorm.io/)
+- [Robot Framework](https://robotframework.org/)
+- [Browser Library](https://marketsquare.github.io/robotframework-browser/Browser.html)
+- [React](https://reactjs.org/)
 
 ## :notebook: Executando
 
-Dentro do **README** de cada subpasta do projeto é detalhado como executar as aplicações separadamente.
-
+Executando o projeto
 ```bash
 # Clone este repositório
-$ git clone https://github.com/WallysonGalvao/rocketseat-gobarber.git
+$ git clone https://github.com/Edullk/financial_system_robot_framework.git
 
 # Acesse a pasta do projeto no seu terminal/cmd
-$ cd rocketseat-gobarber/backend
+$ cd financial_system_robot_framework
 
 # Instale as dependências
 $ yarn install
@@ -73,16 +70,22 @@ $ yarn install
 # Execute a aplicação
 $ yarn start
 ```
+Executando o os testes
 
-Realizar os comandos acima para as demais pastas **[frontend e backend]**.
+```bash
+#Instalando as dependencias, (Nescessário Python e Node já configurados)
+$ pip install robotframework
+$ pip install robotframework-browser
+$ python -m Browser.entry init
 
-## :construction: Como contribuir para o projeto
 
-1. Faça um **fork** do projeto.
-2. Crie uma nova branch com as suas alterações: `git checkout -b my-awesome-feature`
-3. Salve as alterações e crie uma mensagem de commit contando o que você fez: `git commit -m "feature: My awesome feature"`
-4. Envie as suas alterações: `git push origin my-awesome-feature`
-   > Caso tenha alguma dúvida confira este [guia de como contribuir no GitHub](https://github.com/firstcontributions/first-contributions)
+# Executando os testes
+# Na pasta do projeto no seu terminal/cmd
+$ cd tests
+$ python -m robot .
+```
+
+
 
 ## :memo: Licença
 
