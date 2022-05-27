@@ -3,6 +3,8 @@
 </div>
 
 <p align="center">
+    
+   <br/>
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/Edullk/financial_system_robot_framework">
   
