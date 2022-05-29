@@ -1,1 +1,2 @@
-*.typescript linguist-detectable=true
+* linguist-vendored
+*.html linguist-vendored=true
